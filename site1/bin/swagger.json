@@ -1,0 +1,59 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Swagger API doc",
+    "description": "Swagger API doc",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost",
+  "basePath": "/api/v1",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Greeting",
+        "responses": {
+          "200": {
+            "description": "English"
+          }
+        }
+      }
+    }
+  },
+  "host": "localhost",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/{name}": {
+      "get": {
+        "summary": "Personal greeting",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Any name"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "English"
+          }
+        }
+      }
+    }
+  }
+}
